@@ -19,8 +19,9 @@ jobs:
       - run:
           name: Installing dependency
           command: |
-            npm i
-            npm run build
+            ls
+            # npm i
+            # npm run build
 
 # Orchestrate or schedule a set of jobs
 workflows:
