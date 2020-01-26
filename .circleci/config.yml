@@ -18,11 +18,9 @@ jobs:
       - *attach_workspace
       - run:
           name: Installing dependency
+          shell: /bin/bash
           command: |
-            cd train-enquiry-system
             ls
-            npm i
-            npm run build
 
 # Orchestrate or schedule a set of jobs
 workflows:
