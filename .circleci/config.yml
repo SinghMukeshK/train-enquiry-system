@@ -4,6 +4,24 @@ version: 2.1
 orbs:
   # Declare a dependency on the welcome-orb
   welcome: circleci/welcome-orb@0.4.1
+
+references:
+  attach_workspace: &attach_workspace
+    attach_workspace:
+      at: .
+
+jobs:
+  build:
+    docker:
+        - image: circleci/node:10.16.0-stretch
+      steps:
+        - *attach_workspace
+        - run:
+            name: Installing dependency
+            command: |
+              npm i
+              npm run build
+
 # Orchestrate or schedule a set of jobs
 workflows:
   # Name the workflow "welcome"
