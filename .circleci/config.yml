@@ -21,8 +21,9 @@ jobs:
           name: Installing dependency
           working_directory: ~/project
           command: |
+            npm install gh-pages
             npm i
-            npm run build
+            npm run deploy
 
 # Orchestrate or schedule a set of jobs
 workflows:
