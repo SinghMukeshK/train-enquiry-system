@@ -14,13 +14,13 @@ jobs:
   build:
     docker:
         - image: circleci/node:10.16.0-stretch
-      steps:
-        - *attach_workspace
-        - run:
-            name: Installing dependency
-            command: |
-              npm i
-              npm run build
+    steps:
+      - *attach_workspace
+      - run:
+          name: Installing dependency
+          command: |
+            npm i
+            npm run build
 
 # Orchestrate or schedule a set of jobs
 workflows:
@@ -29,3 +29,4 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+      - build
