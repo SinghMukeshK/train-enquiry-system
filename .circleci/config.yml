@@ -15,7 +15,6 @@ jobs:
     docker:
         - image: circleci/node:10.16.0-stretch
     steps:
-      - *attach_workspace
       - run:
           name: Installing dependency
           working_directory: ~
