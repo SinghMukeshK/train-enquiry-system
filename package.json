@@ -1,5 +1,5 @@
 {
-  "name": "my-website",
+  "name": "train-enquiry-system",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "http://singhmukeshk.github.com/trainsapp",
   "browserslist": {
     "production": [
       ">0.2%",
