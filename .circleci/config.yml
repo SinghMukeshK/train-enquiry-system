@@ -18,7 +18,7 @@ jobs:
       - *attach_workspace
       - run:
           name: Installing dependency
-          working_directory: ~/project
+          working_directory: ~
           command: |
             npm i
             ls
